@@ -1,0 +1,186 @@
+
+
+body {
+	margin: 0;
+	background-color: #E1EEBC; /* Warna latar belakang */
+	font-family: Arial, sans-serif; /* Jenis font */
+	margin: 0; /* Menghilangkan margin bawaan */
+	
+}
+
+.container {
+	display: flex;
+	
+}
+
+.sidebar {
+	margin-right: 5%;
+	position: sticky;
+    top: 0;
+    align-self: flex-start; /* agar sticky berfungsi dalam flex/grid container */
+    height: max-content;
+	border-right: 2px solid #96d67f;
+	
+}
+
+.sidebar ul {
+	margin: 0 auto;
+	justify-content: center;
+	padding-inline-start: 0%;
+	padding: 50px;
+}
+
+.sidebar li {
+	margin-bottom: 25px;
+	list-style-type: none;
+	font-style: normal;
+	font-family: monospace;
+	font-size: 20px;
+	border-left: 2px solid #000000;
+	padding-left: 5px;
+}
+
+.sidebar li:hover {
+	background-color: #b2e5a0; /* Warna latar belakang saat hover */
+	border-left: 3px solid #328E6E;
+}
+
+.content {
+	scroll-behavior: smooth;
+}
+
+blockquote {
+	border-left: 5px solid #328E6E; /* Border kiri */
+	padding-left: 10px; /* Spasi dari border */
+	background-color: #90C67C; /* Latar belakang abu-abu muda */
+	font-style: italic; /* Gaya teks */
+	margin: 0 auto; /* Menghilangkan margin bawaan */
+	padding: 10px; /* Spasi dalam blockquote */
+	border-radius: 5px; /* Sudut border */
+  }
+
+img {
+	width: 500px;
+	height: 300px;
+	border-radius: 20px;
+	justify-content: center;
+  }
+
+img:hover {
+	transition: transform 0.5s; /* Transisi saat hover */
+	transform: scale(1.05); /* Membesar gambar saat hover */
+	background-color: #b2e5a0; /* Warna latar belakang saat hover */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan */
+  }
+
+
+code.sudo { /* Khusus untuk class sudo */
+	border: #328E6E;
+	border-radius: 1px;
+	font-style: bold;
+	background-color: #328E6E;
+	padding: 5px;
+	display: block;
+  }
+
+a {
+	color: #328E6E;
+	text-decoration: none;
+}
+
+h1 {
+	border-bottom: 1px solid #96d67f;
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+/* Media Queries Tugas ke-3 css*/
+
+
+/*No.1*/
+@media screen and (max-width: 800px) {
+	.container {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		position: static;
+		justify-content: center;
+		margin-right: 0;
+		border-right: none;
+	}
+
+	.sidebar ul {
+		padding: 20px;
+	}
+
+	.sidebar li {
+		margin-bottom: 10px;
+	}
+
+	.content {
+		margin-top: 20px;
+	}
+
+}
+
+/* No.2 */
+
+@media screen and (min-width: 801px) and (max-width: 999px) {
+	.container {
+		order: 1;
+		flex-direction: row;
+	}
+
+	.sidebar {
+		order: 2;
+
+		position: sticky;
+		top: 0;
+		align-self: flex-start; /* agar sticky berfungsi dalam flex/grid container */
+		height: max-content;
+		border-left: 2px solid #96d67f;
+		margin-right: 0;
+		border-right: none;
+		margin-left: 5%;
+	}
+
+	.sidebar ul {
+		padding: 50px;
+	}
+
+	.sidebar li {
+		margin-bottom: 25px;
+	}
+	
+}
+
+/* No.3 */
+
+@media screen and (min-width: 1000px) {
+
+
+	.sidebar {
+		
+
+		position: sticky;
+		top: 0;
+		align-self: flex-start; /* agar sticky berfungsi dalam flex/grid container */
+		height: max-content;
+		border-right: 2px solid #96d67f;
+		margin-right: 5%;
+	}
+
+	.sidebar ul {
+		padding: 50px;
+	}
+
+	.sidebar li {
+		margin-bottom: 25px;
+	}
+	
+}
