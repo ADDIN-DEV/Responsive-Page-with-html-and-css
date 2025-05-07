@@ -1,4 +1,6 @@
-
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	margin: 0;
@@ -36,13 +38,12 @@ body {
 	font-style: normal;
 	font-family: monospace;
 	font-size: 20px;
-	border-left: 2px solid #000000;
 	padding-left: 5px;
 }
 
 .sidebar li:hover {
 	background-color: #b2e5a0; /* Warna latar belakang saat hover */
-	border-left: 3px solid #328E6E;
+	border-left: 2px solid #328E6E;
 }
 
 .content {
@@ -130,7 +131,7 @@ h2 {
 
 /* No.2 */
 
-@media screen and (min-width: 801px) and (max-width: 999px) {
+@media screen and (min-width: 801px) and (max-width: 1000px) {
 	.container {
 		order: 1;
 		flex-direction: row;
@@ -161,7 +162,7 @@ h2 {
 
 /* No.3 */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1001px) {
 
 
 	.sidebar {
